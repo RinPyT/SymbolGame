@@ -132,7 +132,7 @@ def add_enemy(room_list):
     enemy_coef = room_level / 100
     count_enemy = math.ceil(len(room) * len(room[0])*enemy_coef)
     for i in range(count_enemy):
-        position_set = {'x': randint(2, len(room[0])-2),
+        position_set = {'x': randint(2, len(room[0])-3),
                         'y': randint(2, len(room)-1)}
         y_position = list(room[position_set['y']])
         y_position[position_set['x']] = object_['enemy']
